@@ -1,0 +1,41 @@
+'Sub que abre los archivos y los pone en uno solo
+Sub Open_Files()
+Dim Hoja As Object
+
+    'Desactivo la actualizacion de pantalla para mejor rendimiento
+    Application.ScreenUpdating = False
+       'Definir la variable como tipo Variant
+       Dim X As Variant
+       'Abrir archivos del usuario para seleccionar los archivos a pegar
+       X = Application.GetOpenFilename _
+          'Se define el tipo de archivos a pegar
+           ("Excel Files (*.xls), *.xls", 2, "Abrir archivos", , True)
+        'Validar si se han seleccionado archivos
+        If IsArray(X) Then
+          'Crea un nuevo libro en caso de que se hayan seleccionado
+           Workbooks.Add
+          'Captura nombre de archivo destino donde se grabaran los archivos seleccionados
+           A = ActiveWorkbook.Name
+       'Se itera sobre los archivos seleccionados
+       For y = LBound(X) To UBound(X)
+       'Se muestra en la barra de estado en el archivo el archivo siendo procesado
+       Application.StatusBar = "Importando Archivos: " & X(y)
+         'Abre el archivo actual
+         Workbooks.Open X(y)
+         'Guarda en la variable b el nombre del archivo procesado actual
+         b = ActiveWorkbook.Name
+           'Itera sobre cada hoja analizada y copia la informacion en el archivo creado
+           For Each Hoja In ActiveWorkbook.Sheets
+            Hoja.Copy after:=Workbooks(A).Sheets(Workbooks(A).Sheets.Count)
+           Next
+           'Cierra archivo b
+           Workbooks(b).Close False
+       Next
+       'Muestra listo en barra de estado
+       Application.StatusBar = "Listo"
+       'Llama a subrutina Unir_Hojas para combinar todo en una sola hoja
+       Call Unir_Hojas
+    End If
+    'Desactiva la actualizacion de pantalla
+    Application.ScreenUpdating = False
+   End Sub
