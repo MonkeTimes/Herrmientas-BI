@@ -1,0 +1,8 @@
+// Creo la funcion email_Auto ---Cambiar nombre a cliente especifico a mandar---
+function email_Auto() {
+
+  // Cálculo de la semana anterior para usar en mensajes
+  var fechaHoy = new Date();
+  var unaSemana = 7 * 24 * 60 * 60 * 1000; // Milisegundos en una semana
+  var fechaSemanaAnterior = new Date(fechaHoy - unaSemana);
+  var numeroSemanaAnterior = Utilities.formatDate(fechaSemanaAnterior, Session.getScriptTimeZone(), "w");
