@@ -18,3 +18,11 @@ function email_Auto() {
                      "El presente es para solicitar su apoyo en el envio de ---informacion necesaria--- de la semana " + numeroSemanaAnterior +
                      "Agradezco de antemano el apoyo.\n\n" +
                      "Saludos y excelente día.";
+  // Enviar el correo con copias
+  MailApp.sendEmail({
+    to: destinatarioPrincipal,
+    cc: copiasDestinatarios,
+    subject: asunto,
+    body: cuerpoCorreo
+  });
+}
