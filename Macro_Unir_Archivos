@@ -39,3 +39,25 @@ Dim Hoja As Object
     'Desactiva la actualizacion de pantalla
     Application.ScreenUpdating = False
    End Sub
+
+'Sub que junta las hojas del archivo creado en una sola
+Sub Unir_Hojas()
+Dim Sig As Byte, Eliminar As Boolean
+    'Empieza en la hoja 2 a iterar
+    For Sig = 2 To Worksheets.Count
+        'Copia la informacion en cada hoja
+        Worksheets(Sig).UsedRange.Copy _
+        'Lo pega en la hoja 1
+        Worksheets(1).Range("a1000000").End(xlUp).Offset(1)
+    Next
+       'Desactiva mensajes de advertencia
+       Application.DisplayAlerts = False
+    'Itera desde a segunda hoja
+    For Sig = 2 To Worksheets.Count
+        'Elimina cada hoja
+        Worksheets(2).Delete
+    Next
+'Reactiva las alertas
+Application.DisplayAlerts = True
+
+End Sub
