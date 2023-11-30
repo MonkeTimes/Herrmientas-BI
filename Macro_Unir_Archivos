@@ -8,8 +8,7 @@ Dim Hoja As Object
        Dim X As Variant
        'Abrir archivos del usuario para seleccionar los archivos a pegar
        X = Application.GetOpenFilename _
-          'Se define el tipo de archivos a pegar
-           ("Excel Files (*.xls), *.xls", 2, "Abrir archivos", , True)
+           ("Excel Files (*.xlsx), *.xlsx", 2, "Abrir archivos", , True)
         'Validar si se han seleccionado archivos
         If IsArray(X) Then
           'Crea un nuevo libro en caso de que se hayan seleccionado
@@ -45,9 +44,8 @@ Sub Unir_Hojas()
 Dim Sig As Byte, Eliminar As Boolean
     'Empieza en la hoja 2 a iterar
     For Sig = 2 To Worksheets.Count
-        'Copia la informacion en cada hoja
+        'Copia la informacion en cada hoja y lo pega en la primera hoja
         Worksheets(Sig).UsedRange.Copy _
-        'Lo pega en la hoja 1
         Worksheets(1).Range("a1000000").End(xlUp).Offset(1)
     Next
        'Desactiva mensajes de advertencia
