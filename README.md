@@ -4,8 +4,11 @@ Repositorio que va a almacenar soluciones a utilizar en la empresa seleccionada 
 # Guia de uso Correos Automaticos
 A continuacion se mostrara los pasos para instalar e implementar la aplicacion de google script para automatizar el envio de correos
 
-Requeriimientos:
-1. Cuenta de google
+Requerimientos:
+
+Cuenta de google
+
+Pasos:
 
 1. Iniciar sesion de Google Script
 ![image](https://github.com/MonkeTimes/Herrmientas-BI/assets/144874541/36f81951-79b9-4ecb-8a76-ab0321931973)
@@ -31,7 +34,10 @@ Despues de este paso solo quedaria esperar a que se manden los correos de forma 
 A continuacion demostrare todos los pasos para instalar y ejecutar el codigo de visualbasic para llevar a cabo el uso de la macro que junta archivos
 
 Requerimientos: 
-1. Microsoft Excel 2007 en adelante
+
+Microsoft Excel 2007 en adelante
+
+Pasos:
 
 1. Abrir excel y verificar que se tenga activa la ventana developer (pasos para activarlo en caso de que no)
 ![image](https://github.com/MonkeTimes/Herrmientas-BI/assets/144874541/e66ac3be-e5a3-4d45-9f43-a29748ee18fe)
