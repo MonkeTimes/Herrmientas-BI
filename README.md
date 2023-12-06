@@ -1,7 +1,26 @@
-# Herrmientas-BI
+## Inicio
 Repositorio que va a almacenar soluciones a utilizar en la empresa seleccionada para el proyecto de la materia taller de productividad basada en herramientas tecnologicas
 
-# Guia de uso Correos Automaticos
+## Resumen ejecutivo
+# Descripcion
+En este repositorio se encuentran los codigos para dos herramientas las cuales tienen como proposito apoyar en el proceso de limpieza de informacion del area de BI dentro de la empresa whirlpool, las herramientas que se realizaron son el codigo de google script que permite automatizar correos y una macro que permite juntar diferentes archivos en uno solo.
+
+# Problema identificado
+El problema que se identifico dentro del area de BI es que nos toma mucho tiempo procesar toda la informacion que nos llega de informacion de sell out e inventario de los diferentes clientes, algunos clientes nos hacen descargar de portales desde los cuales nos dan como resultado mas de 30 archivos los cuales tenemos que revisar de uno tomandonos horas adicionales, el otro problema es que tenemos uqe mandar correos de forma semanal a todos los KAMs que llevan las cuentas de los clientes que nos mandan informacion, esto nos quita tiempo y si pudieramos automatizar el envio de estas solicitudes de informacion seria algo muy beneficioso
+
+# Solucion
+Para solucionar estos dos problemas se crearon dos herramientas que tienen como objetivo eliminar por completo y acortar el tiempo que nos toma hacer lo que se menciono anteriormente, se creara una macro que junta archivos, y una herramienta en google script que mande correos automaticos, de tal forma no tendremos que juntar los archivos de uno por uno sino que se juntaran todos a la vez reduciendo asi el tiempo que nos toma limpiar la informacion y la herramienta de correos automaticos basicamente hace que no tengamos que volver a mandar un correo de forma manual, sino que los manda en automatico desde la cuenta que crea el script ahorrandonos esa actividad por completo
+
+# Arquitectura
+![image](https://github.com/MonkeTimes/Herrmientas-BI/assets/144874541/591cbef1-761a-4811-831b-32de2e1fd52b)
+La arquitectura de la solucion va a ser como se muestra en la imagen, en resumidas cuentas se tienen que seguir los pasos que se mencionan en las guias de uso para su configuracion y entonces se podra trabajar, en la macro se seleccionan los archivos y se juntan en uno solo, lo que realmente esta pasando es que la macro une todos los archivos en hojas diferentes y luego se acciona un sub diferente que junta todos esas hojas en una sola y de esa forma se juntan todos los archivos, en el caso de los correos se crea un codigo que al introducir los datos de asunto, destinatario y copias se va a crear un correo electronico el cual llama una funcion para su envio, la forma en la que esto se automatiza es condfigurando activadores que se activen segun la temporalidad establecida 
+
+## Tabla de contenidos
+Esta se encuentra dandole clic al boton que se encuentra en la imagen, configure la pagina de github para que se puedan visualizar de la siguiente forma: 
+
+
+## Guias de uso / Instalacion
+# Correos Automaticos
 A continuacion se mostrara los pasos para instalar e implementar la aplicacion de google script para automatizar el envio de correos
 
 Requerimientos:
@@ -29,7 +48,7 @@ Pasos:
 
 Despues de este paso solo quedaria esperar a que se manden los correos de forma automatica
 
-# Guia de uso Macro que une archivos
+# Macro que une archivos
 
 A continuacion demostrare todos los pasos para instalar y ejecutar el codigo de visualbasic para llevar a cabo el uso de la macro que junta archivos
 
