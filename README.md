@@ -17,6 +17,7 @@ La arquitectura de la solucion va a ser como se muestra en la imagen, en resumid
 
 # Tabla de contenidos
 Esta se encuentra dandole clic al boton que se encuentra en la imagen, configure la pagina de github para que se puedan visualizar de la siguiente forma: 
+![image](https://github.com/MonkeTimes/Herrmientas-BI/assets/144874541/108f4ddb-a14b-474b-b4c7-c652674cb124)
 
 
 # Guias de uso / Instalacion
