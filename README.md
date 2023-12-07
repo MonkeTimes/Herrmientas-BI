@@ -20,9 +20,30 @@ Esta se encuentra dandole clic al boton que se encuentra en la imagen, configure
 ![image](https://github.com/MonkeTimes/Herrmientas-BI/assets/144874541/0d68fef0-4e4d-4551-87a5-76fc1aab2d41)
 ![image](https://github.com/MonkeTimes/Herrmientas-BI/assets/144874541/8457ceb2-823c-4397-b2f7-bf491037d300)
 
+# Requerimientos
+los requerimientos que requieren las dos herramientas son los siguientes:
+### Macro
+Microsoft excel 2007 en adelante
+### Correos automaticos
+Cuenta de google
+
+Debido a la forma en la que se trabajo y en las necesidades del area en donde laboro no habia necesidad de una aplicacion compleja que necesitara de servidores o entornos de desarrollo, lo que se busca son herramientas de facil acceso y configuracion y eso fue lo que se creo
+
+# Instalacion
+Una alternativa a una configuracion manual como se va a demostrar adelante es descargar las macros desde el enlace mostrado y solo seguir el uso descrito mas adelante
+
+### Correos automaticos
+Siguiendo los pasos descritos en la guia de uso, lamentablemente al ser un proyecto en la nube es imposible compartir un ejecutable o archivo que facilite su despliegue
+### Macro que une archivos
+Acceder al siguiente enlace: https://drive.google.com/drive/folders/1ojDgEdt8PgaAPGmLJc_TFqUC074cvF86 
+Descargar los tres archivos los cuales son las macros necesarias para unir cada tipo de archivo segun su nombre, ejemplo, el archivo csv junta archivos de tipo csv, etc.
+![image](https://github.com/MonkeTimes/Herrmientas-BI/assets/144874541/f5787968-a067-4f6e-82bc-3875f6fcf6b0)
+
+Si aparece este mensaje al abrir el archivo dar clic en habilitar para permitir su uso, despues seguir instrucciones descritas adelante
+![image](https://github.com/MonkeTimes/Herrmientas-BI/assets/144874541/c31c40df-976d-44a7-942b-b627c328838b)
 
 
-# Guias de uso / Instalacion
+# Guias de uso / Configuracion
 ### Correos Automaticos
 A continuacion se mostrara los pasos para instalar e implementar la aplicacion de google script para automatizar el envio de correos
 
@@ -74,6 +95,7 @@ Pasos:
 ![image](https://github.com/MonkeTimes/Herrmientas-BI/assets/144874541/d74bb00d-2221-499a-b957-f102aafe8229)
 
 4. Copiar y pegar codigo de la pagina de GitHub
+
 ![image](https://github.com/MonkeTimes/Herrmientas-BI/assets/144874541/59397658-d85f-4da1-a26f-8f907086972d)
 ![image](https://github.com/MonkeTimes/Herrmientas-BI/assets/144874541/11b7ec31-29d6-4c23-9c45-1763116ae991)
 5. Guardar proyecto y cerrar pestaña
@@ -82,11 +104,69 @@ Pasos:
 ![image](https://github.com/MonkeTimes/Herrmientas-BI/assets/144874541/5a94896c-7153-4283-8339-c0067bc63fd3)
 7. Seleccionar archivos a juntar
 ![image](https://github.com/MonkeTimes/Herrmientas-BI/assets/144874541/c155d6cf-f696-462b-ac65-90ec23ac14bb)
+8. Importante guardar el proyecto como macro enabled workbook para uso futuro
+![image](https://github.com/MonkeTimes/Herrmientas-BI/assets/144874541/8780b855-29bc-4e47-85ce-daf923bc86c8)
 
 Despues de ese paso deberia poder juntar los archivos seleccionados en una sola hoja
 
+# Guia de contribucion
+En caso de querer contribuir al proyecto favor de seguir los siguientes pasos:
 
+1. Crear un nuevo branch, de esa forma se clona el repositorio
+![image](https://github.com/MonkeTimes/Herrmientas-BI/assets/144874541/54ea1a96-4e93-42e3-acf7-43dfc135eb5d)
+![image](https://github.com/MonkeTimes/Herrmientas-BI/assets/144874541/8df76196-7440-409a-87c7-2be633f1cbbf)
 
+Asegurarse que el source sea main (master en este repositorio)
 
+![image](https://github.com/MonkeTimes/Herrmientas-BI/assets/144874541/b44424c8-5cb1-42d0-b94e-80d218b0e624)
 
+2. Realizar cambios en la branch creada
 
+![image](https://github.com/MonkeTimes/Herrmientas-BI/assets/144874541/79e5b09d-c2b2-43a3-9623-995855391bea)
+
+En este ejemplo se va a editar el README del repositorio
+
+![image](https://github.com/MonkeTimes/Herrmientas-BI/assets/144874541/8dd748a2-4895-4008-bdde-89e37a2fa867)
+
+Asegurarse que el branch sea el creado y hacer el commit directamente en esa branch
+
+![image](https://github.com/MonkeTimes/Herrmientas-BI/assets/144874541/2916f833-b4c6-4ea2-9a93-eae8080d472f)
+
+3. Realizar el pull request
+
+![image](https://github.com/MonkeTimes/Herrmientas-BI/assets/144874541/85d0b0b5-9f0c-44df-becd-e2de38cd74f1)
+
+Al darle clic a nuevo pull request selecciona como base la branch main y en compare la creada
+
+![image](https://github.com/MonkeTimes/Herrmientas-BI/assets/144874541/b7e5db47-675a-4dde-bb35-facf6af779eb)
+
+Observar los cambios que suceden y darle clic a create pull request
+
+![image](https://github.com/MonkeTimes/Herrmientas-BI/assets/144874541/eae280ad-3440-43a3-b78a-d1828570ee8a)
+
+Puedes agregar una descripcion de los cambios que estas realizando
+
+![image](https://github.com/MonkeTimes/Herrmientas-BI/assets/144874541/e4866f53-0290-4523-8ffc-9a64da4a3256)
+
+4. Esperar a que se acepte el merge
+
+Desde este paso es tarea de los administradores del repositorio el aceptar el pull request creado para combinarlo con el main
+
+![image](https://github.com/MonkeTimes/Herrmientas-BI/assets/144874541/a2f14d6c-eaf6-4850-a232-0ad1808add9d)
+
+Una vez se acepte los cambios se reflejaran al main (master)
+
+![image](https://github.com/MonkeTimes/Herrmientas-BI/assets/144874541/c369069a-85ce-4c1f-8123-c3365e1683e0)
+
+#  Roadmap
+En un futuro se espera implementar lo siguiente en los codigos:
+
+### Macro
+
+1. Funcion que permita identificar el tipo de archivo a juntar quitando la necesidad de usar diferentes archivos o editar el codigo de la macro
+
+### Correos automaticos
+
+1. Forma de dar formato a los mensajes (implementando HTML)
+
+2. Forma de juntar todos los envios de informacion en la misma funcion, de tal forma deja de ser necesario tener un activador para cada KAM
